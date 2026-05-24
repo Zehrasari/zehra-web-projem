@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZENTRA - Profil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profil.css">
+</head>
+<body>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">ZENTRA</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü aç">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="ekip.html">Ekip Bul</a></li>
+      <li><a href="destek.html">Acil Destek</a></li>
+      <li><a href="mentor.html">Mentorlar</a></li>
+      <li><a href="basari.html">Başarı Hikayeleri</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn btn-ghost" id="logoutProfile">Çıkış Yap</button>
+    </div>
+  </nav>
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-panel">
+      <button class="mobile-menu-close" aria-label="Menüyü kapat">&times;</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="ekip.html">Ekip Bul</a></li>
+        <li><a href="destek.html">Acil Destek</a></li>
+        <li><a href="mentor.html">Mentorlar</a></li>
+        <li><a href="basari.html">Başarı Hikayeleri</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      </ul>
+      <div class="mobile-menu-actions">
+        <button class="btn btn-ghost" onclick="document.getElementById('logoutProfile')?.click()">Çıkış Yap</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="profile-main">
+    <aside class="profile-sidebar">
+      <div class="profile-card">
+        <div class="avatar-circle" id="profileAvatarCard">Z</div>
+        <h1 id="profileFullName">Kullanıcı</h1>
+        <p id="profileEmailAddress">kullanici@ornek.com</p>
+        <p class="profile-description">Profilini düzenle, hesabını yönet ve Zentra ekosisteminde hızlıca devam et.</p>
+        <div class="profile-actions">
+          <a href="destek.html" class="btn btn-ghost">Acil Destek</a>
+          <a href="#profileForm" class="btn btn-primary">Profili Düzenle</a>
+        </div>
+      </div>
+    </aside>
+
+    <section class="profile-content">
+      <div class="profile-panel">
+        <p class="section-label">Hesap Ayarları</p>
+        <h2>Profil Bilgilerini Güncelle</h2>
+        <form id="profileForm">
+          <label>Ad Soyad</label>
+          <input type="text" id="editName" placeholder="Ad Soyad" />
+          <label>E-posta</label>
+          <input type="email" id="editEmail" placeholder="E-posta" />
+          <label>Mevcut Şifre</label>
+          <input type="password" id="currentPassword" placeholder="Mevcut Şifre" />
+          <label>Yeni Şifre</label>
+          <input type="password" id="newPassword" placeholder="Yeni Şifre" />
+          <button type="submit" class="btn btn-primary">Kaydet</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+  <script src="js/profil.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

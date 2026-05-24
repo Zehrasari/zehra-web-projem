@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZENTRA</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- Atmosphere -->
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+
+<!-- ── NAV ───────────────────────────────────────────── -->
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">ZENTRA</a>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü aç">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links">
+    <li class="active"><a href="index.html" class="active">Anasayfa</a></li>
+    <li><a href="ekip.html">Ekip Bul</a></li>
+    <li><a href="destek.html">Acil Destek</a></li>
+    <li><a href="mentor.html">Mentorlar</a></li>
+    <li><a href="basari.html">Başarı Hikayeleri</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button id="signInAction" class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+  </div>
+</nav>
+<div class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-panel">
+    <button class="mobile-menu-close" aria-label="Menüyü kapat">&times;</button>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="active">Anasayfa</a></li>
+      <li><a href="ekip.html">Ekip Bul</a></li>
+      <li><a href="destek.html">Acil Destek</a></li>
+      <li><a href="mentor.html">Mentorlar</a></li>
+      <li><a href="basari.html">Başarı Hikayeleri</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    </ul>
+    <div class="mobile-menu-actions">
+      <button class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── HERO ───────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow"><span></span>YAPAY ZEKANIN ÖTESİNDE BİR EKOSİSTEM</div>
+    <p class="hero-tagline">
+Yapay zeka harika kod yazabilir ama o kodu fiziksel bir donanıma entegre edip sahaya çıkaramaz. Geliştirdiğin bir otonom sürüş algoritmasını tek motorlu bir sistem mimarisine uyarlayacak, mikrodenetleyici entegrasyonunu yapacak veya donanım krizlerini seninle omuz omuza çözecek gerçek takım arkadaşlarına ihtiyacın var. Zentra, dijital dünyadaki kodları fiziksel projelere dönüştüren geliştiricileri eşleştirir.</p>
+    <div class="hero-actions">
+      <button id="btnKesfet" class="btn-kesfet" onclick="window.location.href='basari.html'">
+        Keşfetmeye Başla
+        <div class="arrow-icon">↗</div>
+      </button>
+      <a href="ekip.html" class="link-connect">Ağa Katıl</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-decor">
+      <span class="hero-decor-circle circle-1"></span>
+      <span class="hero-decor-circle circle-2"></span>
+      <span class="hero-decor-symbol symbol-a">∑</span>
+      <span class="hero-decor-symbol symbol-b">π</span>
+      <span class="hero-decor-symbol symbol-c">∞</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── CARDS ──────────────────────────────────────────── -->
+<div class="cards-wrapper">
+  <div class="cards-row reveal" id="cardsRow">
+    <div class="card">
+      <div class="card-thumb card-thumb-1"></div>
+      <span class="card-arrow">↗</span>
+      <h4>DevMatch: Eksik Parçayı Bul</h4>
+      <p>Yapay zeka sana kod yazabilir ama yarışmada takım arkadaşın olamaz. Donanım, yazılım veya tasarım alanındaki eksiklerini tamamlayacak gerçek yeteneklerle eşleş ve projeni hayata geçir.</p>
+    </div>
+    <div class="card">
+      <div class="card-thumb card-thumb-2"></div>
+      <span class="card-arrow">↗</span>
+      <h4>Donanım ve Sistem Entegrasyonu</h4>
+      <p>Yazdığın kod fiziksel motorda çalışmıyor mu? Sensör füzyonu, mikrodenetleyici mimarileri ve donanım entegrasyonu gibi yapay zekanın göremediği fiziksel sorunlar için uzmanlardan canlı destek al.</p>
+    </div>
+    <div class="card">
+      <div class="card-thumb card-thumb-3"></div>
+      <span class="card-arrow">↗</span>
+      <h4>Eşzamanlı Geliştirme Ortamı</h4>
+      <p>Sadece forumlarda tartışmakla kalma. Entegre bulut araçlarımız sayesinde eşleştiğin takım arkadaşınla aynı anda aynı dosya üzerinde çalış, fikirlerini anında koda dök.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── FEATURES ───────────────────────────────────────── -->
+<section class="section">
+  <div class="reveal">
+    <p class="section-label">TEMEL HİZMETLERİMİZ</p>
+    <h2 class="section-title">Geleceği Birlikte Kodlamak İçin İhtiyacın Olan Her Şey</h2>
+    <p class="section-sub">Artık projelerinde yalnız değilsin. Zentra, anlık kod desteği ve yetenek bazlı eşleştirme sistemi ile fikirlerini hayata geçirmeni sağlar. Sorunları birlikte çözüyor, büyük projeleri birlikte inşa ediyoruz.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <div class="feature-icon fi-1">🌐</div>
+      <h3>Anlık Kod Acil Servisi (SOS)</h3>
+      <p>Tıkandığın noktada, sadece 15 dakikada hata tespiti veya kod incelemesi yapacak tecrübeli bir mentorla canlı ekran paylaşımı başlat. Vakit kaybetme, çözüme ulaş.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon fi-2">⚡</div>
+      <h3>DevMatch - Yetenek Eşleştirme</h3>
+      <p>Yapay zeka (YOLO) biliyorsun ama donanım (STM32) partnerine mi ihtiyacın var? Sistemimiz yeteneklerini analiz eder ve projen için mükemmel tamamlayıcı profille seni eşleştirir.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon fi-3">🔮</div>
+      <h3>Gelecek Nesil İşbirliği</h3>
+      <p>Projelerini hayata geçirmen için gereken teknik ve insani desteği tek çatı altında toplayan, topluluk odaklı, fütüristik bir geliştirici ağı.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS ──────────────────────────────────────────── -->
+<div class="stats-band reveal">
+  <div class="stat"><div class="stat-number">95%</div><div class="stat-label">Başarılı Çözüm (SOS çağrılarının mentorlarca çözülme oranı)</div></div>
+  <div class="stat"><div class="stat-number">5000+</div><div class="stat-label">Aktif Geliştirici (Ağdaki kayıtlı yazılımcı ve mühendis sayısı)</div></div>
+  <div class="stat"><div class="stat-number">500+</div><div class="stat-label">Tamamlanan Proje (Platform üzerinden ekiplerin hayata geçirdiği projeler)</div></div>
+  <div class="stat"><div class="stat-number"><10 Dakika</div><div class="stat-label">SOS Dönüş Süresi (Hata çözüm talebine ortalama dönüş hızı)</div></div>
+</div>
+
+<!-- ── CTA ────────────────────────────────────────────── -->
+<section class="cta-section">
+  <div class="cta-glow"></div>
+  <p class="section-label reveal">HEMEN BAŞLA</p>
+  <h2 class="section-title reveal">Yapay Zekanın Ötesine Geçmeye Hazır mısın?</h2>
+  <p class="section-sub reveal">Sadece kod yazan değil, kodlarını fiziksel dünyada çalıştıran ve gerçek projeler üreten yüzlerce geliştiriciye katıl. Zentra ile takımını kur, donanımını entegre et ve üretmeye başla.</p>
+  <div class="cta-actions reveal">
+    <button id="ctaJoin" class="btn btn-primary btn-large">Topluluğa Katıl</button>
+    <button id="ctaProjects" class="btn btn-ghost btn-large">Projeleri İncele</button>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────── -->
+<footer>
+  <div class="nav-logo">ZENTRA</div>
+  <span>© 2026 Zentra Technologies. Tüm hakları saklıdır. </span>
+  <span class="footer-links">Privacy · Terms · Contact</span>
+</footer>
+
+<script src="js/script.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

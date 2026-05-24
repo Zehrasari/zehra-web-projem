@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZENTRA - Destek</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/destek.css">
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">ZENTRA</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü aç">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="ekip.html">Ekip Bul</a></li>
+      <li class="active"><a href="destek.html" class="active">Acil Destek</a></li>
+      <li><a href="mentor.html">Mentorlar</a></li>
+      <li><a href="basari.html">Başarı Hikayeleri</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="signInAction" class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+    </div>
+  </nav>
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-panel">
+      <button class="mobile-menu-close" aria-label="Menüyü kapat">&times;</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="ekip.html">Ekip Bul</a></li>
+        <li><a href="destek.html" class="active">Acil Destek</a></li>
+        <li><a href="mentor.html">Mentorlar</a></li>
+        <li><a href="basari.html">Başarı Hikayeleri</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      </ul>
+      <div class="mobile-menu-actions">
+        <button class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="support-hero">
+    <section class="support-copy">
+      <span class="section-label">DESTEK MERKEZİ</span>
+      <h1 class="section-title">AI destek ve mentor randevularıyla projeni hızla ilerlet.</h1>
+      <p class="section-sub">Zentra Destek, yapay zekânın gücünü gerçek insan mentorluk deneyimiyle buluşturur. AI destek talebi gönder, mentor takvimini aç ve boş saatlere göre randevunu planla.</p>
+
+      <div class="support-cards">
+        <article class="support-card reveal">
+          <div class="support-icon">🤖</div>
+          <div>
+            <h3>AI Destek Alma</h3>
+            <p>Canlı yardım hattı, otomatik hata analizi ve yol gösterici öneriler ile projenin her aşamasında destek al.</p>
+          </div>
+        </article>
+        <article class="support-card reveal">
+          <div class="support-icon">⚡</div>
+          <div>
+            <h3>Acil Destek Oluşturma</h3>
+            <p>Hızlıca destek talebi oluştur, sistem seni yönlendirsin ve acil sorun taleplerini takip et.</p>
+          </div>
+        </article>
+        <article class="support-card reveal">
+          <div class="support-icon">📆</div>
+          <div>
+            <h3>Randevu Sistemi</h3>
+            <p>Her eğitmen ve mentor için ayrı takvim. Dolu ve boş saatleri gör, sistemden hemen rezervasyon yap.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="support-aside reveal">
+<div class="support-aside-card" id="supportAsideCard">
+          <span class="card-tag" id="asideCardTag">ÜYE GEREKLİ</span>
+          <h2 id="asideCardTitle">Randevu almak için giriş yapın.</h2>
+          <p id="asideCardDesc">Giriş yapmadan önce randevu talebi oluşturamazsınız. Mevcut hesabınızla login olduktan sonra randevu alabilirsiniz.</p>
+          <div class="status-chip" id="memberBanner">Giriş yapmadınız. Randevu almak için giriş yapmanız gerekiyor.</div>
+          <div class="appointments-list" id="asideAppointments" hidden></div>
+        <button class="btn btn-primary" id="openMemberButton">Giriş Yap / Üye Ol</button>
+      </div>
+    </section>
+  </main>
+
+  <section class="section support-booking-section">
+    <div class="reveal">
+      <p class="section-label">RANDEVU TAKVİMİ</p>
+      <h2 class="section-title">Her mentorun kendi boş/dolu tarihleri</h2>
+      <p class="section-sub">Randevu alırken dolu saatler kırmızı, boş olanlar ise yeşil olarak gösterilir. Kayıtlı randevuların takvime işlenir.</p>
+    </div>
+    <div class="mentor-grid" id="mentorGrid"></div>
+  </section>
+
+  <section class="section support-panel-section">
+    <div class="support-panel reveal">
+      <div class="panel-block panel-info-block">
+        <p class="section-label">RANDEVU BİLGİSİ</p>
+        <h3>Mentor takviminden uygun saati seçip randevunuzu ayırtın.</h3>
+        <p>Boş olan saatler yeşil, dolu saatler kırmızı olarak işaretlenir. Önce giriş yapmanız gerekiyor, sonra randevu alma ekranı aktif olur.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="nav-logo">ZENTRA</div>
+    <span>© 2026 Zentra Technologies. Tüm hakları saklıdır.</span>
+    <span style="color:rgba(255,255,255,0.2)">Privacy · Terms · Contact</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/destek.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

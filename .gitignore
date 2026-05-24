@@ -1,0 +1,25 @@
+# Bağımlılıklar (Node.js)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Cloudflare Wrangler ve D1 Veritabanı
+.wrangler/
+.dev.vars
+
+# Derleme (Build) Çıktıları
+dist/
+build/
+
+# Ortam Değişkenleri (Gizli tutulması gerekenler)
+.env
+.env.*
+
+# İşletim Sistemi Dosyaları
+.DS_Store
+Thumbs.db
+
+# IDE ve Editör Ayarları
+.vscode/
+.idea/
+*.suo

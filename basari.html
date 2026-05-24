@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZENTRA - Başarı Hikayeleri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/basari.css">
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">ZENTRA</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü aç">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="ekip.html">Ekip Bul</a></li>
+      <li><a href="destek.html">Acil Destek</a></li>
+      <li><a href="mentor.html">Mentorlar</a></li>
+      <li class="active"><a href="basari.html" class="active">Başarı Hikayeleri</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="signInAction" class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+    </div>
+  </nav>
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-panel">
+      <button class="mobile-menu-close" aria-label="Menüyü kapat">&times;</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="ekip.html">Ekip Bul</a></li>
+        <li><a href="destek.html">Acil Destek</a></li>
+        <li><a href="mentor.html">Mentorlar</a></li>
+        <li><a href="basari.html" class="active">Başarı Hikayeleri</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      </ul>
+      <div class="mobile-menu-actions">
+        <button class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="section success-hero reveal">
+    <div class="hero-copy">
+      <p class="section-label">GERÇEK BAŞARILAR</p>
+      <h1 class="section-title">Mentorlarla, kullanıcılarla ve ekiplerle birlikte üretilen projeler.</h1>
+      <p class="section-sub">Zentra ekosisteminde tanışıp buluşan takımların gerçek hikayeleri. Her proje, farklı bir ihtiyaçtan doğdu ve birlikte büyüdü.</p>
+    </div>
+  </header>
+
+  <section class="section success-slider-section reveal">
+    <div class="success-slider" id="successSlider">
+      <div class="slide active" data-index="0">
+        <div class="slide-copy">
+          <span class="slide-label">Öne Çıkan Proje</span>
+          <h2>Tarımın Geleceğini Yeniden Yazdılar</h2>
+          <p>Hasan ve mentor Dr. Elif Yıldız, otonom tarım robotu prototipi geliştirerek üretimde sürdürülebilirliği artırdı. Robot, hassas sulama ve tarla analizi yaparak yüzde 30'a varan verim artışı sağladı.</p>
+          <div class="slide-meta">
+            <span>Mentor: Dr. Elif Yıldız</span>
+            <span>Kullanıcı: Hasan K.</span>
+          </div>
+        </div>
+        <div class="slide-visual">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900&q=80&auto=format&fit=crop" alt="Tarım robotu" />
+        </div>
+      </div>
+      <div class="slide" data-index="1">
+        <div class="slide-copy">
+          <span class="slide-label">Takım Hikayesi</span>
+          <h2>Edge AI ile Akıllı Görüntü Analizi</h2>
+          <p>İrem ve Mert, yapay zekayı canlı veri akışına taşıdı. Kamera tabanlı kalite kontrol sistemi, hatalı parça oranını düşürdü ve modellemeyi gerçek zamanlı hale getirdi.</p>
+          <div class="slide-meta">
+            <span>Mentor: Mert Kaya</span>
+            <span>Kullanıcı: İrem A.</span>
+          </div>
+        </div>
+        <div class="slide-visual">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format&fit=crop" alt="Yapay zeka proje" />
+        </div>
+      </div>
+      <div class="slide" data-index="2">
+        <div class="slide-copy">
+          <span class="slide-label">Kullanıcı Buluşması</span>
+          <h2>İki Kullanıcı Bir Araya Gelince</h2>
+          <p>Furkan ve Zeynep, Zentra üzerinden tanıştı. Akıllı enerji izleme platformu geliştirdiler ve küçük işletmeler için üretim maliyetlerini görünür kılan bir çözüme imza attılar.</p>
+          <div class="slide-meta">
+            <span>Kullanıcı: Furkan A.</span>
+            <span>Kullanıcı: Zeynep E.</span>
+          </div>
+        </div>
+        <div class="slide-visual">
+          <img src="https://images.unsplash.com/photo-1517430816045-df4b7de1d0cf?w=900&q=80&auto=format&fit=crop" alt="Ekip çalışması" />
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button id="prevSlide" class="slider-btn">◀</button>
+      <div class="slider-dots" id="sliderDots"></div>
+      <button id="nextSlide" class="slider-btn">▶</button>
+    </div>
+  </section>
+
+  <section class="section project-highlights reveal">
+    <div class="project-intro">
+      <p class="section-label">Detaylı Hikayeler</p>
+      <h2 class="section-title">Ayrıntılarıyla en etkileyici projeler</h2>
+      <p class="section-sub">Her vaka, bir mentorun uzmanlığı ve bir kullanıcının fikri ile birleşti. Projelerimiz, tasarımdan üretime ve piyasaya çıkmaya kadar uzanan bir yolculuk sunuyor.</p>
+    </div>
+    <div class="project-grid">
+      <article class="project-card reveal">
+        <span class="project-tag">Otonom Tarım Robotu</span>
+        <h3>Tarla Analizinden Hasada Tam Destek</h3>
+        <p>Bu proje, tarımsal verimi artırmak için sensörlü otonom bir araç tasarladı. Toprak nemi, ışık ve bitki sağlığı verileri kullanılarak otomatik sulama ve ilaçlama planı oluşturuluyor. Mentor Dr. Elif Yıldız, sistem entegrasyonu ve saha testi sürecine liderlik etti.</p>
+        <div class="project-footer">
+          <span>Hasan K. + Dr. Elif Yıldız</span>
+          <a href="mentor.html" class="link">Mentor profiline git</a>
+        </div>
+      </article>
+      <article class="project-card reveal">
+        <span class="project-tag">Edge AI Görüntü Analizi</span>
+        <h3>Gerçek Zamanlı Kalite Kontrol</h3>
+        <p>Üretim hattında yer alan kamera verilerini işleyen sistem, hatalı üretimi anında tespit ediyor. Mert Kaya rehberliğinde geliştirilen model, uç cihazlara başarıyla dağıtıldı ve gecikme sürelerini minimuma indirdi.</p>
+        <div class="project-footer">
+          <span>İrem A. + Mert Kaya</span>
+          <a href="mentor.html" class="link">Mentor profiline git</a>
+        </div>
+      </article>
+      <article class="project-card reveal">
+        <span class="project-tag">Enerji İzleme Platformu</span>
+        <h3>Kullanıcı Buluşmasıyla Doğan Fikir</h3>
+        <p>Furkan ve Zeynep, Zentra'da tanıştı, güç tüketimini ve maliyeti izleyen bir dashboard geliştirdi. Proje, küçük işletmelerin enerji maliyetlerini şeffaf hale getirip verimliliği artırmayı hedefliyor.</p>
+        <div class="project-footer">
+          <span>Furkan A. + Zeynep E.</span>
+          <a href="mentor.html" class="link">Mentorlar sayfasına git</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div class="nav-logo">ZENTRA</div>
+    <span>© 2026 Zentra Technologies. Tüm hakları saklıdır.</span>
+    <span style="color:rgba(255,255,255,0.2)">Privacy · Terms · Contact</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/basari.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

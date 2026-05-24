@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZENTRA - Giriş Yap / Kayıt Ol</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/giris.css">
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">ZENTRA</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü aç">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li class="active"><a href="index.html" class="active">Anasayfa</a></li>
+      <li><a href="ekip.html">Ekip Bul</a></li>
+      <li><a href="destek.html">Acil Destek</a></li>
+      <li><a href="mentor.html">Mentorlar</a></li>
+      <li><a href="basari.html">Başarı Hikayeleri</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="signInAction" class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+    </div>
+  </nav>
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-panel">
+      <button class="mobile-menu-close" aria-label="Menüyü kapat">&times;</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">Anasayfa</a></li>
+        <li><a href="ekip.html">Ekip Bul</a></li>
+        <li><a href="destek.html">Acil Destek</a></li>
+        <li><a href="mentor.html">Mentorlar</a></li>
+        <li><a href="basari.html">Başarı Hikayeleri</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      </ul>
+      <div class="mobile-menu-actions">
+        <button class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form id="registerForm">
+        <h1>Hesap Oluştur</h1>
+        <span>Ağa katılmak için bilgilerini gir</span>
+        <input type="text" id="registerName" name="kullanici_adi" placeholder="Kullanıcı Adı" required />
+        <input type="email" id="registerEmail" name="email" placeholder="E-posta" required />
+        <div class="password-field">
+          <input type="password" id="registerPassword" name="password" placeholder="Şifre" autocomplete="new-password" required />
+          <button type="button" class="toggle-password" aria-label="Şifreyi göster/gizle">👁</button>
+        </div>
+        <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+      </form>
+    </div>
+
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Giriş Yap</h1>
+        <span>Zentra ekosistemine dön</span>
+        <input type="email" name="email" placeholder="E-posta" />
+        <div class="password-field">
+          <input type="password" name="password" placeholder="Şifre" autocomplete="current-password" />
+          <button type="button" class="toggle-password" aria-label="Şifreyi göster/gizle">👁</button>
+        </div>
+        <a href="#" class="forgot">Şifreni mi unuttun?</a>
+        <button type="submit" class="btn btn-primary">Giriş Yap</button>
+      </form>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Tekrar Hoş Geldin!</h1>
+          <p>Kaldığın yerden devam etmek için mevcut hesabınla giriş yap.</p><br>
+          <button class="btn btn-ghost" id="signIn">Giriş Yap</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Aramıza Katıl!</h1>
+          <p>Yapay zekanın ötesindeki projelere imza atmak için hemen yeteneklerini sergile.</p><br>
+          <button class="btn btn-ghost" id="signUp">Kayıt Ol</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/giris.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

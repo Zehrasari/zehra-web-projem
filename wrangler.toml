@@ -1,0 +1,8 @@
+name = "zehra-web-projesi"
+pages_build_output_dir = "." # HTML dosyalarının olduğu klasör. (Eğer public gibi bir klasörde ise "public" yap)
+compatibility_date = "2026-05-24"
+
+[[d1_databases]]
+binding = "DB" # Kod içinde veritabanını bu isimle çağıracağız
+database_name = "dbbtkakademi"
+database_id = "ff33772c-d638-4c8c-89ee-7a8a6bd74a11"

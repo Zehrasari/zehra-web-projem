@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZENTRA - İletişim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/iletisim.css">
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">ZENTRA</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü aç">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="ekip.html">Ekip Bul</a></li>
+      <li><a href="destek.html">Acil Destek</a></li>
+      <li><a href="mentor.html">Mentorlar</a></li>
+      <li><a href="basari.html">Başarı Hikayeleri</a></li>
+      <li class="active"><a href="iletisim.html" class="active">İletişim</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="signInAction" class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+    </div>
+  </nav>
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-panel">
+      <button class="mobile-menu-close" aria-label="Menüyü kapat">&times;</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="ekip.html">Ekip Bul</a></li>
+        <li><a href="destek.html">Acil Destek</a></li>
+        <li><a href="mentor.html">Mentorlar</a></li>
+        <li><a href="basari.html">Başarı Hikayeleri</a></li>
+        <li><a href="iletisim.html" class="active">İletişim</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      </ul>
+      <div class="mobile-menu-actions">
+        <button class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="section contact-hero reveal">
+    <h1 class="section-title">İletişim</h1>
+    <p class="section-sub">Bize ulaşmak ister misiniz? Aşağıdaki formu doldurun veya kurucumuzun LinkedIn bağlantısından doğrudan iletişime geçin.</p>
+  </header>
+
+  <main class="section contact-main">
+    <div class="contact-grid">
+      <section class="contact-form-card reveal">
+        <h2>Mesaj Gönder</h2>
+        <form id="contactForm">
+          <label>İsim</label>
+          <input type="text" id="cName" placeholder="Adınız" required />
+
+          <label>E-posta</label>
+          <input type="email" id="cEmail" placeholder="mail@ornek.com" required />
+
+          <label>Konu</label>
+          <input type="text" id="cSubject" placeholder="Konu" />
+
+          <label>Mesaj</label>
+          <textarea id="cMessage" rows="6" placeholder="Mesajınız..." required></textarea>
+
+          <div style="display:flex;gap:10px;margin-top:12px;">
+            <button type="submit" class="btn btn-primary">Gönder</button>
+            <button type="button" id="clearForm" class="btn btn-ghost">Temizle</button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="contact-info-card reveal">
+        <h3>İletişim Bilgileri</h3>
+        <p><strong>Adres:</strong> Örnek Mah. Teknoloji Cad. No:42, İstanbul</p>
+        <p><strong>E-posta:</strong> hello@zentra.example</p>
+        <p><strong>Telefon:</strong> +90 212 000 00 00</p>
+
+        <h4>Kurucu</h4>
+        <p>Kurucu: <a href="https://www.linkedin.com/in/your-linkedin" id="founderLinkedIn" target="_blank" rel="noopener">LinkedIn Profilim</a></p>
+
+        <h4>Mentor Sosyal Hesapları</h4>
+        <p>Burada mentorların LinkedIn, Twitter veya kişisel bağlantıları görüntülenecek. (Admin ekleyebilir.)</p>
+        <div class="mentor-social-list">
+          <div class="mentor-social" data-mentor="m1">
+            <strong>Dr. Elif Yıldız</strong>
+            <div class="social-links">
+              <a href="#" class="link" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" class="link" aria-label="Twitter">Twitter</a>
+            </div>
+          </div>
+          <div class="mentor-social" data-mentor="m2">
+            <strong>Mert Kaya</strong>
+            <div class="social-links">
+              <a href="#" class="link">LinkedIn</a>
+              <a href="#" class="link">Twitter</a>
+            </div>
+          </div>
+          <div class="mentor-social" data-mentor="m3">
+            <strong>Ayşe Demir</strong>
+            <div class="social-links">
+              <a href="#" class="link">LinkedIn</a>
+              <a href="#" class="link">Twitter</a>
+            </div>
+          </div>
+          <div class="mentor-social" data-mentor="m4">
+            <strong>Dr. Can Öztürk</strong>
+            <div class="social-links">
+              <a href="#" class="link">LinkedIn</a>
+              <a href="#" class="link">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="nav-logo">ZENTRA</div>
+    <span>© 2026 Zentra Technologies. Tüm hakları saklıdır.</span>
+    <span style="color:rgba(255,255,255,0.2)">Privacy · Terms · Contact</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/iletisim.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

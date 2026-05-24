@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZENTRA - Mentorlar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mentor.css">
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">ZENTRA</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü aç">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="ekip.html">Ekip Bul</a></li>
+      <li><a href="destek.html">Acil Destek</a></li>
+      <li class="active"><a href="mentor.html" class="active">Mentorlar</a></li>
+      <li><a href="basari.html">Başarı Hikayeleri</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="signInAction" class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+    </div>
+  </nav>
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-panel">
+      <button class="mobile-menu-close" aria-label="Menüyü kapat">&times;</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="ekip.html">Ekip Bul</a></li>
+        <li><a href="destek.html">Acil Destek</a></li>
+        <li><a href="mentor.html" class="active">Mentorlar</a></li>
+        <li><a href="basari.html">Başarı Hikayeleri</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      </ul>
+      <div class="mobile-menu-actions">
+        <button class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="mentor-hero">
+    <div class="mentor-hero-inner reveal">
+      <h1 class="section-title">Mentor Ağı</h1>
+      <p class="section-sub">Alanında deneyimli mentorlarımızla tanış — mini CV'leri, uzmanlıkları ve verdikleri hizmetlerle projene hız kat.</p>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="mentor-grid" id="mentorGrid">
+      <!-- Mentor cards (4 adet) -->
+      <article class="mentor-card reveal">
+        <button class="add-badge" aria-hidden>Randevu</button>
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=60&auto=format&fit=crop" alt="Dr. Elif Yıldız" class="mentor-photo">
+        <h3 class="mentor-name">Dr. Elif Yıldız</h3>
+        <p class="mentor-role">Otonom Sistemler & Donanım Entegrasyonu</p>
+        <p class="mentor-desc">10+ yıllık gömülü sistem deneyimi ve sensör füzyonu konusunda uzman. Endüstriyel robotik ve otonom drone projelerinde lider olarak çalıştı. Donanım-software entegrasyonu, güç yönetimi ve saha testleri konusunda danışmanlık veriyor; prototipten üretime kadar teknik destek sağlıyor.</p>
+        <div class="mentor-actions">
+          <button class="btn btn-primary book-btn" data-mentor-id="m1" data-mentor-name="Dr. Elif Yıldız">Randevu Al</button>
+        </div>
+      </article>
+
+      <article class="mentor-card reveal">
+        <button class="add-badge" aria-hidden>Randevu</button>
+        <img src="https://images.unsplash.com/photo-1545996124-1b8d3b4b7f4b?w=800&q=60&auto=format&fit=crop" alt="Mert Kaya" class="mentor-photo">
+        <h3 class="mentor-name">Mert Kaya</h3>
+        <p class="mentor-role">Makine Öğrenimi & Model Dağıtımı</p>
+        <p class="mentor-desc">Model optimizasyonu ve edge deployment konularında uzman. TinyML, quantization ve model dağıtımı üzerine pratik çözümler sunuyor. Projelerde model boyutu ve performans dengesini kurarak üretime hazır modeller geliştirir ve mentorluğu ile takımları hızlandırır.</p>
+        <div class="mentor-actions">
+          <button class="btn btn-primary book-btn" data-mentor-id="m2" data-mentor-name="Mert Kaya">Randevu Al</button>
+        </div>
+      </article>
+
+      <article class="mentor-card reveal">
+        <button class="add-badge" aria-hidden>Randevu</button>
+        <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=800&q=60&auto=format&fit=crop" alt="Ayşe Demir" class="mentor-photo">
+        <h3 class="mentor-name">Ayşe Demir</h3>
+        <p class="mentor-role">Elektronik Tasarım & PCB</p>
+        <p class="mentor-desc">PCB tasarımı ve sinyal bütünlüğü konularında kapsamlı deneyim. Prototipten seri üretime geçiş süreçlerinde DFM danışmanlığı sağlar. IoT cihazları ve sensör entegrasyonlarında düşük güçlü, maliyet etkin çözümler geliştirir.</p>
+        <div class="mentor-actions">
+          <button class="btn btn-primary book-btn" data-mentor-id="m3" data-mentor-name="Ayşe Demir">Randevu Al</button>
+        </div>
+      </article>
+
+      <article class="mentor-card reveal">
+        <button class="add-badge" aria-hidden>Randevu</button>
+        <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?w=800&q=60&auto=format&fit=crop" alt="Dr. Can Öztürk" class="mentor-photo">
+        <h3 class="mentor-name">Dr. Can Öztürk</h3>
+        <p class="mentor-role">Sistem Mühendisliği & Test Otomasyonu</p>
+        <p class="mentor-desc">Test otomasyonu ve sistem entegrasyonu konularında uzman. Otomotiv ve havacılık projelerinde sahada güvenilirlik testleri, entegrasyon testleri ve CI/CD altyapı tasarımları yürüttü. Test stratejileri ve otomasyon araçları konusunda mentorluk verir.</p>
+        <div class="mentor-actions">
+          <button class="btn btn-primary book-btn" data-mentor-id="m4" data-mentor-name="Dr. Can Öztürk">Randevu Al</button>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="nav-logo">ZENTRA</div>
+    <span>© 2026 Zentra Technologies. Tüm hakları saklıdır.</span>
+    <span style="color:rgba(255,255,255,0.2)">Privacy · Terms · Contact</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/mentor.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

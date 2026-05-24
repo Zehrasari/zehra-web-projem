@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZENTRA - Ekip Bul</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ekip.css">
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">ZENTRA</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü aç">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Anasayfa</a></li>
+      <li class="active"><a href="ekip.html" class="active">Ekip Bul</a></li>
+      <li><a href="destek.html">Acil Destek</a></li>
+      <li><a href="mentor.html">Mentorlar</a></li>
+      <li><a href="basari.html">Başarı Hikayeleri</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="signInAction" class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+    </div>
+  </nav>
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-panel">
+      <button class="mobile-menu-close" aria-label="Menüyü kapat">&times;</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="ekip.html" class="active">Ekip Bul</a></li>
+        <li><a href="destek.html">Acil Destek</a></li>
+        <li><a href="mentor.html">Mentorlar</a></li>
+        <li><a href="basari.html">Başarı Hikayeleri</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      </ul>
+      <div class="mobile-menu-actions">
+        <button class="btn btn-primary" onclick="window.location.href='giris.html'">Giriş Yap</button>
+      </div>
+    </div>
+  </div>
+
+<section class="ekip-page">
+
+  <!-- SOL MENU -->
+  <aside class="ekip-sidebar">
+
+    <div class="sidebar-title">
+      <h2>Topluluk</h2>
+      <p>İnsanlarla bağlantı kur</p>
+    </div>
+
+    <nav>
+
+      <a href="#" class="active" data-section="feed">
+        <i class="fa-solid fa-house"></i>
+        Akış
+      </a>
+
+      <a href="#" data-section="messages">
+        <i class="fa-solid fa-comments"></i>
+        Mesajlar
+      </a>
+
+      <a href="#" data-section="following">
+        <i class="fa-solid fa-user-group"></i>
+        Takip Ettiklerim
+      </a>
+
+      <a href="#" data-section="ideas">
+        <i class="fa-solid fa-lightbulb"></i>
+        Fikirler
+      </a>
+
+      <a href="#" data-section="questions">
+        <i class="fa-solid fa-circle-question"></i>
+        Sorular
+      </a>
+
+    </nav>
+
+    <div class="community-card">
+      <h3>Bugünün Konusu</h3>
+      <p>
+        Yapay zeka destekli startup fikirleri 🚀
+      </p>
+    </div>
+
+  </aside>
+
+  <!-- ORTA ALAN -->
+  <main class="ekip-main">
+
+    <!-- HERO -->
+    <section class="ekip-hero">
+
+      <div class="hero-badge">
+        EKİP ALANI
+      </div>
+
+      <h1>
+        İnsanlarla tanış, fikirlerini paylaş,
+        ekip kur ve birlikte üret.
+      </h1>
+
+      <p>
+        Girişimciler, geliştiriciler, tasarımcılar ve mentorlarla
+        aynı ortamda buluş.
+      </p>
+
+    </section>
+
+    <!-- POST OLUŞTUR -->
+    <section class="create-post">
+
+      <div class="create-post-top">
+
+        <img src="https://i.pravatar.cc/100?img=12">
+
+        <textarea
+          id="postInput"
+          placeholder="Aklındaki fikri, soruyu veya problemini paylaş..."
+        ></textarea>
+
+      </div>
+
+      <div class="create-post-bottom">
+
+        <div class="post-tools">
+
+          <button>
+            <i class="fa-solid fa-image"></i>
+            Görsel
+          </button>
+
+          <button>
+            <i class="fa-solid fa-hashtag"></i>
+            Etiket
+          </button>
+
+        </div>
+
+        <button id="shareBtn" class="share-btn">
+          Paylaş
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- POSTLAR -->
+    <section class="section-panel" id="feedSection">
+      <div class="posts" id="postsContainer"></div>
+    </section>
+
+    <section class="section-panel" id="messagesSection" hidden>
+      <h2>Mesajlar</h2>
+      <div class="messages-panel">
+        <div class="messages-head">
+          <p id="activeThreadInfo">Bir sohbet seçin veya bir gönderiden mesaj başlatın.</p>
+          <div id="messageThreadList"></div>
+        </div>
+        <div class="message-thread" id="messageThread"></div>
+        <div class="message-write">
+          <textarea id="messageInput" placeholder="Mesaj yaz..."></textarea>
+          <button id="sendMessageBtn" class="share-btn">Gönder</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-panel" id="followingSection" hidden>
+      <h2>Takip Ettiklerim</h2>
+      <div class="following-list" id="followingList"></div>
+    </section>
+
+    <section class="section-panel" id="ideasSection" hidden>
+      <h2>Fikirler</h2>
+      <p>Burada fikir paylaşabilir, ekip arayışlarını ve proje önerilerini paylaşabilirsin. Yorumlar ve etkileşimler sistemde kayıtlı kalır.</p>
+    </section>
+
+    <section class="section-panel" id="questionsSection" hidden>
+      <h2>Sorular</h2>
+      <p>Fikirlerini, problem alanlarını ve ihtiyaçlarını burada paylaş. Topluluk, takip edilen üyeler ve mesajlaşma kısmı üzerinden sana dönüş yapabilir.</p>
+    </section>
+
+  </main>
+
+  <!-- SAĞ PANEL -->
+  <aside class="ekip-right">
+
+    <div class="glass-card">
+
+      <h3>Trend Konular</h3>
+
+      <div class="trend">
+        <span>#startup</span>
+        <p>134 paylaşım</p>
+      </div>
+
+      <div class="trend">
+        <span>#yapayzeka</span>
+        <p>87 paylaşım</p>
+      </div>
+
+      <div class="trend">
+        <span>#frontend</span>
+        <p>62 paylaşım</p>
+      </div>
+
+    </div>
+
+    <div class="glass-card">
+
+      <h3>Tanışabileceğin Kişiler</h3>
+
+      <div class="suggest-user">
+
+        <div class="left">
+
+          <img src="https://i.pravatar.cc/100?img=22">
+
+          <div>
+            <h4>Elif Kaya</h4>
+            <p>UI Designer</p>
+          </div>
+
+        </div>
+
+        <button data-follow-user="elif">Takip</button>
+
+      </div>
+
+      <div class="suggest-user">
+
+        <div class="left">
+
+          <img src="https://i.pravatar.cc/100?img=24">
+
+          <div>
+            <h4>Burak Demir</h4>
+            <p>Backend Developer</p>
+          </div>
+
+        </div>
+
+        <button data-follow-user="burak">Takip</button>
+
+      </div>
+
+    </div>
+
+  </aside>
+  <script src="js/ekip.js"></script>
+
+</section>
+  <script src="js/nav.js"></script>
+</body>
+</html>
